@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <style type="text/css">
-.st0{fill:#4E342E;}
 .st1{fill:#FCB316;stroke:#FCB316;}
 .st2{fill:#FCB316;stroke:#FBB316;stroke-linecap:round;stroke-linejoin:round;}
 .st3{fill:#FFCB29;}
@@ -8,8 +7,6 @@
 .st5{fill:none;stroke:#4E342E;stroke-width:0.75;}
 .st6{fill:none;stroke:#FCB316;}
 </style>
-<path class="st0" d="M60,64H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h56c2.2,0,4,1.8,4,4v56C64,62.2,62.2,64,60,64z"/>
-
 <rect x="10" y="18" class="st1" width="48" height="32"/>
 <polyline class="st2" points="6,46 10,50 10,46"/>
 <polyline class="st2" points="58,18 54,14 54,18"/>
