@@ -1,15 +1,21 @@
-todo:
-
-change tabindex="-1" for inactive side of flipcards
-
-adding an extra line messes with flashcards flipping
+	todo:
 
 change selection color, add popovers, make drag more intuitive
 
 when flipping card, focus text area for instant typing
 
+	bugs:
+
+adding an extra line messes with flashcards flipping
+
 when changing the order of cards then deleting one, the following card's buttons won't work
 
-features:
+	features:
 
 import, export, and print flashcards
+
+add option for spellcheck
+
+group cards into folders
+
+add option for flip to focus textarea or flip btn

@@ -50,10 +50,10 @@
 						<button ng-click="remove(card)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
 					</div>
 					<div class="flashcard-front">
-						<textarea ng-model="card.front" class="form-control flashcard-content"></textarea>
+						<textarea ng-model="card.front" class="form-control flashcard-content" ng-attr-tabindex="{{card.flipped ? -1 : 0}}"></textarea>
 					</div>
 					<div class="flashcard-back">
-						<textarea ng-model="card.back" class="form-control flashcard-content"></textarea>
+						<textarea ng-model="card.back" class="form-control flashcard-content" ng-attr-tabindex="{{!card.flipped ? -1 : 0}}"></textarea>
 					</div>
 				</div>
 			</div>
