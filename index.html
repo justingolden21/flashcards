@@ -51,10 +51,10 @@
 						<i class="fas fa-arrows-alt"></i>
 					</div>
 					<div class="flashcard-front">
-						<textarea ng-model="card.front" class="form-control flashcard-content" ng-attr-tabindex="{{card.flipped ? -1 : 0}}"></textarea>
+						<textarea ng-model="card.front" class="form-control flashcard-content" tabindex="{{card.flipped ? -1 : 0}}"></textarea>
 					</div>
 					<div class="flashcard-back">
-						<textarea ng-model="card.back" class="form-control flashcard-content" ng-attr-tabindex="{{!card.flipped ? -1 : 0}}"></textarea>
+						<textarea ng-model="card.back" class="form-control flashcard-content" tabindex="{{!card.flipped ? -1 : 0}}"></textarea>
 					</div>
 				</div>
 			</div>
