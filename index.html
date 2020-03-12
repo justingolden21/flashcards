@@ -48,6 +48,7 @@
 					<div class="flashcard-btns">
 						<button ng-click="flip(card)" class="btn btn-secondary"> <i class="fas fa-sync-alt"></i> </button>
 						<button ng-click="remove(card)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+						<i class="fas fa-arrows-alt"></i>
 					</div>
 					<div class="flashcard-front">
 						<textarea ng-model="card.front" class="form-control flashcard-content" ng-attr-tabindex="{{card.flipped ? -1 : 0}}"></textarea>

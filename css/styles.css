@@ -20,13 +20,14 @@
 }
 .flashcard-content {
 	color: #4e342e; /*brown 800*/
-	width: 100%;
+	width: 90%;
 	height: 50%;
-	background-color: transparent !important;
 	resize: none;
 	border-color: #3e2723; /*brown 900*/
 	outline-color: #546e7a; /*bluegrey 600*/
 	margin: 5px;
+
+	overflow: hidden; /*remove scrollbars*/
 }
 
 /* flashcards flipping */
@@ -46,7 +47,10 @@
 .flashcard-back {
 	transform: rotateY(180deg);
 }
-.flashcard-inside.flipped {
+.flashcard-inside .flashcard-content {
+	background-color: #ffb300; /*amber 600*/
+}
+.flashcard-inside.flipped .flashcard-content, .flashcard-inside.flipped {
 	background-color: #ffca28; /*amber 400*/
 }
 
@@ -67,4 +71,12 @@
 .btn-secondary:hover {
 	background-color: #607d8b; /*bluegrey 500*/
 	border-color: #607d8b; /*bluegrey 500*/
+}
+
+/* selection */
+::selection {
+	background: #ffecb3; /*amber 100*/
+}
+::-moz-selection {
+	background: #ffecb3; /*amber 100*/	
 }

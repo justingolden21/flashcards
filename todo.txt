@@ -1,12 +1,10 @@
 	todo:
 
-change selection color, add popovers, make drag more intuitive
+add popovers
 
 when flipping card, focus text area for instant typing
 
 	bugs:
-
-adding an extra line messes with flashcards flipping
 
 when changing the order of cards then deleting one, the following card's buttons won't work
 
@@ -19,3 +17,7 @@ add option for spellcheck
 group cards into folders
 
 add option for flip to focus textarea or flip btn
+
+checkbox to add quick copy buttons
+
+add images to flashcard? how to export? must be hosted online?
