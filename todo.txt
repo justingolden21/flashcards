@@ -21,3 +21,11 @@ add option for flip to focus textarea or flip btn
 checkbox to add quick copy buttons
 
 add images to flashcard? how to export? must be hosted online?
+
+toggle between sortable and draggable:
+	$('#flashcards').sortable();
+	$('.flashcard').draggable();
+	problem is newly created cards won't be draggable, must call the code again after the DOM element is created, which isn't necessarily after we add the card. need timeout or callback
+
+implement jquery ui "selectable"? in order to quickly delete or modify?
+
