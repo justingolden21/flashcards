@@ -1,0 +1,15 @@
+todo:
+
+change tabindex="-1" for inactive side of flipcards
+
+flipping card positions btns on opposite side (accidently delete when meaning to flip)
+
+adding an extra line messes with flashcards flipping
+
+change selection color, add popovers, make drag more intuitive
+
+when flipping card, focus text area for instant typing
+
+features:
+
+import, export, and print flashcards

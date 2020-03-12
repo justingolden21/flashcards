@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="app1" ng-init="cards = [{front: 'Montgomery', back: 'Alabama', flipped: false}, {front: 'Juneau', back: 'Alaska', flipped: false}, {front: 'Phoenix', back: 'Arizona', flipped: false}]">
+<head>
+	<title>Simple Flashcards</title>
+
+	<meta charset="utf-8">
+	<meta name="title=" content="Simple Flashcards">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A simple website for making, studying, and printing flashcards online">
+	<meta name="keywords" content="flashcards, simple flashcards, flashcards online, printable flashcards, print flashcards">
+	<meta class="theme" name="theme-color" content="#ffb300">
+	<meta class="theme" name="msapplication-navbutton-color" content="#ffb300">
+	<meta class="theme" name="apple-mobile-web-app-status-bar-style" content="#ffb300">
+	<!-- <link rel="shortcut icon" href="img/logo.png"> -->
+
+	<!-- jQuery, jQuery UI FontAwesome, Popper, Bootstrap, Angular JS CDNs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+	<!-- Local Links -->
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/scripts.js"></script>
+
+</head>
+<body class="text-center container">
+
+	<div ng-controller="ctrl1">
+		
+		<br>
+		<button ng-click="new()" class="btn btn-secondary"><i class="fas fa-plus"></i></button>
+		<button ng-click="removeAll()" class="btn btn-danger"><i class="fas fa-times"></i></button>
+
+		<div id="flashcards" class="row">
+			<div class="flashcard col-sm-6 col-md-4 col-lg-3" ng-repeat="card in cards">
+				<div class="flashcard-inside" ng-class="{'flipped' : card.flipped}">
+					<button ng-click="card.flipped = !card.flipped" class="btn btn-secondary"> <i class="fas fa-sync-alt"></i> </button>
+					<button ng-click="remove(card)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+					<div class="flashcard-front">
+						<textarea ng-model="card.front" class="flashcard-content"></textarea>
+					</div>
+					<div class="flashcard-back">
+						<textarea ng-model="card.back" class="flashcard-content"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
