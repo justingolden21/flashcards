@@ -7,17 +7,18 @@ app1.controller('ctrl1', ($scope)=> {
 			console.log($card);
 	}
 
-	$scope.remove = (card)=> {
+	$scope.flip = (card) =>
+		card.flipped = !card.flipped;
+
+	$scope.remove = (card)=> 
 		$scope.cards = $scope.cards.filter(obj=> obj.front!=card.front || obj.back!=card.back);
-	}
+	
 
-	$scope.new = ()=> {
+	$scope.new = ()=>
 		$scope.cards.push({front: '', back: '', flipped: false});
-	}
 
-	$scope.removeAll = ()=> {
+	$scope.removeAll = ()=>
 		$scope.cards = [];
-	}
 
 });
 
