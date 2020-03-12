@@ -45,8 +45,10 @@
 		<div id="flashcards" class="row">
 			<div class="flashcard col-sm-6 col-md-4 col-lg-3" ng-repeat="card in cards">
 				<div class="flashcard-inside" ng-class="{'flipped' : card.flipped}">
-					<button ng-click="card.flipped = !card.flipped" class="btn btn-secondary"> <i class="fas fa-sync-alt"></i> </button>
-					<button ng-click="remove(card)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+					<div class="flashcard-btns">
+						<button ng-click="card.flipped = !card.flipped" class="btn btn-secondary"> <i class="fas fa-sync-alt"></i> </button>
+						<button ng-click="remove(card)" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+					</div>
 					<div class="flashcard-front">
 						<textarea ng-model="card.front" class="form-control flashcard-content"></textarea>
 					</div>
